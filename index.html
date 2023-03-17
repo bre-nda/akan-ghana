@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel='stylesheet' href='CSS/style.css'>
+  <title>Akan Names</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 intro">
+          <h1 class="akan-heading">Akan&nbsp;&nbsp;<span class="heading-name">Names</span></h1>
+          <hr>
+          <div class="akan-description">
+            <p class="fs12">A web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+            <p class="fs12">Here are some Ghanaian Names:</p>
+            <div class="row ghanaian-names">
+              <div class="col-md-6">
+                <h4><i class="fa fa-female"></i>&nbsp;&nbsp;Female</h4>
+                <ul class="fs11">
+                  <li>Sunday: Akosua</li>
+                  <li>Monday: Adwoa</li>
+                  <li>Tuesday: Abenaa</li>
+                  <li>Wednesday: Akua</li>
+                  <li>Thursday:  Yaa</li>
+                  <li>Friday: Afua</li>
+                  <li>Saturday: Ama</li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h4><i class="fa fa-male"></i>&nbsp;&nbsp; Male</h4>
+                <ul class="fs11">
+                  <li>Sunday: Kwasi</li>
+                  <li>Monday: Kwadwo</li>
+                  <li>Tuesday: Kwabena</li>
+                  <li>Wednesday: Kwaku</li>
+                  <li>Thursday:  Yaw</li>
+                  <li>Friday: Kofi</li>
+                  <li>Saturday: Kwame</li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-4  mt30  akan-form">
+          <h5>Please Enter Your Birthdate Here:</h5>
+          <div class="add-stylist-form">
+            <form>
+                <label class="label">Birthday</label>
+                <div class="form-group mb15">
+                  <div class="input-group mb15">
+                    <span class="input-group-addon  mt-1"><i class="fa fa-calendar"></i></span>&nbsp;&nbsp;
+                    <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control" autocomplete="off">
+                 </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group mb15">
+                  <label class="label">Gender</label>
+                  <div class="rdio rdio-default fs11">
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">&nbsp;&nbsp;Male</label>
+                </div>
+                <div class="rdio rdio-default fs11">
+                  <input type="radio" name="gender" value="Female" id="female">
+                  <label for="female">&nbsp;&nbsp;Female</label>
+               </div>
+                </div>
+                <button type="submit" onclick="getAkanName(); return false;" class="button  btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>&nbsp;&nbsp;
+                    <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-outline-success btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>		
+            </form>
+          </div>
+          <hr>
+          <div class="your-akan-name">
+            <p id="message" class="output"></p>
+          </div>
+        </div>
+  
+      <div class="col-md-2"></div>
+      </div>
+    </div>
+    
+    <footer class="footer"> &copy; 2023 All Rights Reserved. Akan Names Application.</p></footer>
+  </div>
+  
+  <script src="JS/script.js"></script>
+  <script src="JS/jquery-3.4.1.js"></script>
+</body>
+</html>
